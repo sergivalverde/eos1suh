@@ -1,0 +1,344 @@
+{
+  "model_id": "eos1suh",
+  "test_date": "2026-02-20T08:27:23.074143+00:00",
+  "test_tool": "ersilia-hub-plugin",
+  "test_tool_version": "1.0.0",
+  "source_repo": "https://github.com/lucinamay/biosynfoni",
+  "paper_url": "https://doi.org/10.1186/s13321-025-01081-6",
+  "python_version": "3.9.6",
+  "verification_environment": {
+    "packages": {
+      "biosynfoni": "1.0.0",
+      "numpy": "2.0.2",
+      "PyYAML": "6.0.3",
+      "rdkit": "2025.9.2",
+      "tqdm": "4.67.3"
+    }
+  },
+  "inspect_checks": {
+    "file_existence": {
+      "status": "passed",
+      "files_checked": 7,
+      "files_found": 7
+    },
+    "metadata_validation": {
+      "status": "passed",
+      "checks_passed": 22,
+      "checks_failed": 0,
+      "details": {
+        "Identifier": {
+          "status": "passed",
+          "value": "eos1suh"
+        },
+        "Slug": {
+          "status": "passed",
+          "value": "biosynfoni-fingerprint"
+        },
+        "Status": {
+          "status": "passed",
+          "value": "In progress"
+        },
+        "Title": {
+          "status": "passed",
+          "value": "BioSynFoni biosynthesis-informed molecular fingerprint"
+        },
+        "Description": {
+          "status": "passed",
+          "value": "752 chars"
+        },
+        "Task": {
+          "status": "passed",
+          "value": "Representation"
+        },
+        "Subtask": {
+          "status": "passed",
+          "value": "Featurization"
+        },
+        "Input": {
+          "status": "passed",
+          "value": [
+            "Compound"
+          ]
+        },
+        "Output": {
+          "status": "passed",
+          "value": [
+            "Score"
+          ]
+        },
+        "Output Consistency": {
+          "status": "passed",
+          "value": "Fixed"
+        },
+        "Input Dimension": {
+          "status": "passed",
+          "value": 1
+        },
+        "Output Dimension": {
+          "status": "passed",
+          "value": 39
+        },
+        "Interpretation": {
+          "status": "passed",
+          "value": "224 chars"
+        },
+        "Tag": {
+          "status": "passed",
+          "value": [
+            "Fingerprint",
+            "Natural product",
+            "Descriptor"
+          ]
+        },
+        "Biomedical Area": {
+          "status": "passed",
+          "value": [
+            "Any"
+          ]
+        },
+        "Target Organism": {
+          "status": "passed",
+          "value": [
+            "Any"
+          ]
+        },
+        "Source": {
+          "status": "passed",
+          "value": "Local"
+        },
+        "Source Type": {
+          "status": "passed",
+          "value": "External"
+        },
+        "Publication": {
+          "status": "passed",
+          "value": "https://doi.org/10.1186/s13321-025-01081-6"
+        },
+        "Source Code": {
+          "status": "passed",
+          "value": "https://github.com/lucinamay/biosynfoni"
+        },
+        "License": {
+          "status": "passed",
+          "value": "MIT"
+        },
+        "Publication Type": {
+          "status": "passed",
+          "value": "Peer reviewed"
+        }
+      }
+    },
+    "column_consistency": {
+      "status": "passed",
+      "num_columns": 39,
+      "columns_match": true,
+      "output_rows": 3,
+      "input_rows": 3,
+      "no_input_columns_in_output": true
+    },
+    "dependency_pinning": {
+      "status": "passed",
+      "python_version": "3.10",
+      "num_packages": 0,
+      "all_pinned": true
+    },
+    "syntax_validation": {
+      "status": "passed",
+      "file": "model/framework/code/main.py"
+    }
+  },
+  "shallow_checks": {
+    "end_to_end_run": {
+      "exit_code": 0,
+      "output_rows": 3,
+      "output_columns": 39,
+      "values_match_expected": true,
+      "no_invalid_values": true,
+      "status": "passed"
+    },
+    "consistency": {
+      "status": "passed",
+      "method": "dual_run_comparison",
+      "identical": true
+    }
+  },
+  "verified_outputs": {
+    "input_smiles": [
+      "CC(=O)Oc1ccccc1C(=O)O",
+      "CC(C)Cc1ccc(cc1)C(C)C(=O)O",
+      "Cn1c(=O)c2c(ncn2C)n(c1=O)C"
+    ],
+    "output_values": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        6,
+        0,
+        8,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2,
+        10,
+        2,
+        5,
+        13,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "output_columns": [
+      "co_coa",
+      "co_nadh",
+      "co_nadph",
+      "allstnd_aminos",
+      "nonstnd_aminos",
+      "s_openpyr_C6O6",
+      "s_openfur_C5O5",
+      "s_pyranose_C5O4",
+      "s_furanose_C4O3",
+      "d_indoleC2N_12",
+      "d_phenylC2N_9",
+      "d_c5n_6",
+      "d_c4n_5",
+      "d_phenylC3_9_strict",
+      "d_phenylC2_8_strict",
+      "d_phenylC1_7_strict",
+      "d_isoprene_5",
+      "d2_acetyl_C2O1",
+      "d2_methylmalonyl_C3",
+      "d_ethyl_2",
+      "d_methyl_1",
+      "phosphate_2",
+      "sulfonate_2",
+      "hal_f",
+      "hal_cl",
+      "hal_br",
+      "hal_i",
+      "n_nitrate_1",
+      "o_epoxy_1",
+      "o_ether_1",
+      "o_hydroxyl_1",
+      "r_c3",
+      "r_c4",
+      "r_c5",
+      "r_c6",
+      "r_c7",
+      "r_c8",
+      "r_c9",
+      "r_c10"
+    ]
+  },
+  "overall": {
+    "status": "passed",
+    "total_checks": 7,
+    "passed": 7,
+    "failed": 0
+  }
+}
