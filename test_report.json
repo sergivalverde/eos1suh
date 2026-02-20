@@ -1,0 +1,859 @@
+{
+  "model_id": "eos1suh",
+  "test_date": "2026-02-20T08:27:23.074143+00:00",
+  "test_tool": "ersilia-hub-plugin",
+  "test_tool_version": "1.0.0",
+  "source_repo": "https://github.com/lucinamay/biosynfoni",
+  "paper_url": "https://doi.org/10.1186/s13321-025-01081-6",
+  "python_version": "3.9.6",
+  "verification_environment": {
+    "packages": {
+      "biosynfoni": "1.0.0",
+      "numpy": "2.0.2",
+      "PyYAML": "6.0.3",
+      "rdkit": "2025.9.2",
+      "tqdm": "4.67.3"
+    }
+  },
+  "inspect_checks": {
+    "file_existence": {
+      "status": "passed",
+      "files_checked": 7,
+      "files_found": 7
+    },
+    "metadata_validation": {
+      "status": "passed",
+      "checks_passed": 22,
+      "checks_failed": 0,
+      "details": {
+        "Identifier": {
+          "status": "passed",
+          "value": "eos1suh"
+        },
+        "Slug": {
+          "status": "passed",
+          "value": "biosynfoni-fingerprint"
+        },
+        "Status": {
+          "status": "passed",
+          "value": "In progress"
+        },
+        "Title": {
+          "status": "passed",
+          "value": "BioSynFoni biosynthesis-informed molecular fingerprint"
+        },
+        "Description": {
+          "status": "passed",
+          "value": "752 chars"
+        },
+        "Task": {
+          "status": "passed",
+          "value": "Representation"
+        },
+        "Subtask": {
+          "status": "passed",
+          "value": "Featurization"
+        },
+        "Input": {
+          "status": "passed",
+          "value": [
+            "Compound"
+          ]
+        },
+        "Output": {
+          "status": "passed",
+          "value": [
+            "Score"
+          ]
+        },
+        "Output Consistency": {
+          "status": "passed",
+          "value": "Fixed"
+        },
+        "Input Dimension": {
+          "status": "passed",
+          "value": 1
+        },
+        "Output Dimension": {
+          "status": "passed",
+          "value": 39
+        },
+        "Interpretation": {
+          "status": "passed",
+          "value": "224 chars"
+        },
+        "Tag": {
+          "status": "passed",
+          "value": [
+            "Fingerprint",
+            "Natural product",
+            "Descriptor"
+          ]
+        },
+        "Biomedical Area": {
+          "status": "passed",
+          "value": [
+            "Any"
+          ]
+        },
+        "Target Organism": {
+          "status": "passed",
+          "value": [
+            "Any"
+          ]
+        },
+        "Source": {
+          "status": "passed",
+          "value": "Local"
+        },
+        "Source Type": {
+          "status": "passed",
+          "value": "External"
+        },
+        "Publication": {
+          "status": "passed",
+          "value": "https://doi.org/10.1186/s13321-025-01081-6"
+        },
+        "Source Code": {
+          "status": "passed",
+          "value": "https://github.com/lucinamay/biosynfoni"
+        },
+        "License": {
+          "status": "passed",
+          "value": "MIT"
+        },
+        "Publication Type": {
+          "status": "passed",
+          "value": "Peer reviewed"
+        }
+      }
+    },
+    "column_consistency": {
+      "status": "passed",
+      "num_columns": 39,
+      "columns_match": true,
+      "output_rows": 3,
+      "input_rows": 3,
+      "no_input_columns_in_output": true
+    },
+    "dependency_pinning": {
+      "status": "passed",
+      "python_version": "3.10",
+      "num_packages": 0,
+      "all_pinned": true
+    },
+    "syntax_validation": {
+      "status": "passed",
+      "file": "model/framework/code/main.py"
+    }
+  },
+  "shallow_checks": {
+    "end_to_end_run": {
+      "exit_code": 0,
+      "output_rows": 3,
+      "output_columns": 39,
+      "values_match_expected": true,
+      "no_invalid_values": true,
+      "status": "passed"
+    },
+    "consistency": {
+      "status": "passed",
+      "method": "dual_run_comparison",
+      "identical": true
+    }
+  },
+  "verified_outputs": {
+    "input_smiles": [
+      "CC(=O)Oc1ccccc1C(=O)O",
+      "CC(C)Cc1ccc(cc1)C(C)C(=O)O",
+      "Cn1c(=O)c2c(ncn2C)n(c1=O)C"
+    ],
+    "output_values": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        6,
+        0,
+        8,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2,
+        10,
+        2,
+        5,
+        13,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "output_columns": [
+      "co_coa",
+      "co_nadh",
+      "co_nadph",
+      "allstnd_aminos",
+      "nonstnd_aminos",
+      "s_openpyr_C6O6",
+      "s_openfur_C5O5",
+      "s_pyranose_C5O4",
+      "s_furanose_C4O3",
+      "d_indoleC2N_12",
+      "d_phenylC2N_9",
+      "d_c5n_6",
+      "d_c4n_5",
+      "d_phenylC3_9_strict",
+      "d_phenylC2_8_strict",
+      "d_phenylC1_7_strict",
+      "d_isoprene_5",
+      "d2_acetyl_C2O1",
+      "d2_methylmalonyl_C3",
+      "d_ethyl_2",
+      "d_methyl_1",
+      "phosphate_2",
+      "sulfonate_2",
+      "hal_f",
+      "hal_cl",
+      "hal_br",
+      "hal_i",
+      "n_nitrate_1",
+      "o_epoxy_1",
+      "o_ether_1",
+      "o_hydroxyl_1",
+      "r_c3",
+      "r_c4",
+      "r_c5",
+      "r_c6",
+      "r_c7",
+      "r_c8",
+      "r_c9",
+      "r_c10"
+    ]
+  },
+  "overall": {
+    "status": "warning",
+    "total_checks": 10,
+    "passed": 9,
+    "failed": 0,
+    "warnings": 1
+  },
+  "deep_checks": {
+    "distribution_analysis": {
+      "num_input_molecules": 50,
+      "runtime_seconds": 0.34,
+      "num_valid_outputs": 50,
+      "completion_rate": 1.0,
+      "columns": {
+        "co_coa": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "co_nadh": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "co_nadph": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "allstnd_aminos": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.08,
+          "std": 0.2713,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 3.3912,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "nonstnd_aminos": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "s_openpyr_C6O6": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.04,
+          "std": 0.196,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 4.899,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "s_openfur_C5O5": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.16,
+          "std": 0.88,
+          "min": 0.0,
+          "max": 6.0,
+          "coefficient_of_variation": 5.5,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "s_pyranose_C5O4": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.02,
+          "std": 0.14,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 7.0,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "s_furanose_C4O3": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "d_indoleC2N_12": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.04,
+          "std": 0.196,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 4.899,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_phenylC2N_9": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.14,
+          "std": 0.347,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 2.4785,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_c5n_6": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.1,
+          "std": 0.3606,
+          "min": 0.0,
+          "max": 2.0,
+          "coefficient_of_variation": 3.6056,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_c4n_5": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.1,
+          "std": 0.3,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 3.0,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_phenylC3_9_strict": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.08,
+          "std": 0.337,
+          "min": 0.0,
+          "max": 2.0,
+          "coefficient_of_variation": 4.2131,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_phenylC2_8_strict": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.22,
+          "std": 0.5758,
+          "min": 0.0,
+          "max": 3.0,
+          "coefficient_of_variation": 2.6175,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_phenylC1_7_strict": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.5,
+          "std": 0.8062,
+          "min": 0.0,
+          "max": 4.0,
+          "coefficient_of_variation": 1.6125,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_isoprene_5": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 4.12,
+          "std": 8.8603,
+          "min": 0.0,
+          "max": 49.0,
+          "coefficient_of_variation": 2.1506,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d2_acetyl_C2O1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 2.56,
+          "std": 2.8647,
+          "min": 0.0,
+          "max": 12.0,
+          "coefficient_of_variation": 1.119,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d2_methylmalonyl_C3": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.54,
+          "std": 1.2682,
+          "min": 0.0,
+          "max": 6.0,
+          "coefficient_of_variation": 2.3486,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_ethyl_2": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 8.32,
+          "std": 5.6972,
+          "min": 0.0,
+          "max": 24.0,
+          "coefficient_of_variation": 0.6848,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "d_methyl_1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.6,
+          "std": 0.9165,
+          "min": 0.0,
+          "max": 3.0,
+          "coefficient_of_variation": 1.5275,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "phosphate_2": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "sulfonate_2": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.12,
+          "std": 0.475,
+          "min": 0.0,
+          "max": 2.0,
+          "coefficient_of_variation": 3.9581,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "hal_f": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.08,
+          "std": 0.44,
+          "min": 0.0,
+          "max": 3.0,
+          "coefficient_of_variation": 5.5,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "hal_cl": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.28,
+          "std": 1.04,
+          "min": 0.0,
+          "max": 5.0,
+          "coefficient_of_variation": 3.7143,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "hal_br": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "hal_i": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "n_nitrate_1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.24,
+          "std": 0.5122,
+          "min": 0.0,
+          "max": 2.0,
+          "coefficient_of_variation": 2.1344,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "o_epoxy_1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "o_ether_1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.04,
+          "std": 0.196,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 4.899,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "o_hydroxyl_1": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.56,
+          "std": 1.2192,
+          "min": 0.0,
+          "max": 6.0,
+          "coefficient_of_variation": 2.1771,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "r_c3": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.02,
+          "std": 0.14,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 7.0,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "r_c4": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "r_c5": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.02,
+          "std": 0.14,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 7.0,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "r_c6": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.84,
+          "std": 0.9871,
+          "min": 0.0,
+          "max": 5.0,
+          "coefficient_of_variation": 1.1751,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "r_c7": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "r_c8": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "coefficient_of_variation": 0.0,
+          "is_constant": true,
+          "all_finite": true,
+          "status": "failed"
+        },
+        "r_c9": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.02,
+          "std": 0.14,
+          "min": 0.0,
+          "max": 1.0,
+          "coefficient_of_variation": 7.0,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        },
+        "r_c10": {
+          "count_valid": 50,
+          "count_null": 0,
+          "mean": 0.18,
+          "std": 0.8875,
+          "min": 0.0,
+          "max": 6.0,
+          "coefficient_of_variation": 4.9304,
+          "is_constant": false,
+          "all_finite": true,
+          "status": "passed"
+        }
+      },
+      "status": "warning"
+    },
+    "sanity_checks": {
+      "matched_categories": [
+        "fingerprint"
+      ],
+      "checks": [
+        {
+          "category": "fingerprint",
+          "method": "cosine_similarity",
+          "similar_pair_similarity": 0.9798,
+          "dissimilar_pair_similarity": 0.8847,
+          "separation_correct": true,
+          "status": "passed"
+        }
+      ],
+      "status": "passed"
+    },
+    "paper_reproduction": {
+      "status": "passed",
+      "paper_url": "https://doi.org/10.1186/s13321-025-01081-6",
+      "method": "within_class_vs_between_class_cosine_similarity",
+      "detail": "BioSynFoni captures biosynthetic similarity: within-class cosine similarity (0.9383) > between-class (0.6793), separation ratio 1.38x",
+      "test_compounds": 23,
+      "biosynthetic_classes": ["alkaloid", "isoprenoid", "phenylpropanoid", "carbohydrate", "fatty_acid", "polyketide"],
+      "within_class_similarity": 0.9383,
+      "between_class_similarity": 0.6793,
+      "separation_ratio": 1.3814,
+      "per_class_within_similarity": {
+        "alkaloid": 0.8933,
+        "isoprenoid": 0.8272,
+        "phenylpropanoid": 0.9670,
+        "carbohydrate": 0.9926,
+        "fatty_acid": 0.9999,
+        "polyketide": 0.9613
+      }
+    }
+  }
+}

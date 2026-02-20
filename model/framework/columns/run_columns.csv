@@ -1,1 +1,40 @@
 name,type,direction,description
+co_coa,integer,,Count of CoA co-enzyme substructure matches
+co_nadh,integer,,Count of NADH co-enzyme substructure matches
+co_nadph,integer,,Count of NADPH co-enzyme substructure matches
+allstnd_aminos,integer,,Count of standard amino acid substructure matches
+nonstnd_aminos,integer,,Count of non-standard amino acid substructure matches
+s_openpyr_C6O6,integer,,Count of open pyranose substructure matches
+s_openfur_C5O5,integer,,Count of open furanose substructure matches
+s_pyranose_C5O4,integer,,Count of pyranose substructure matches
+s_furanose_C4O3,integer,,Count of furanose substructure matches
+d_indoleC2N_12,integer,,Count of indole substructure matches
+d_phenylC2N_9,integer,,Count of phenyl-C2N substructure matches
+d_c5n_6,integer,,Count of C5N substructure matches
+d_c4n_5,integer,,Count of C4N substructure matches
+d_phenylC3_9_strict,integer,,Count of phenyl-C3 substructure matches
+d_phenylC2_8_strict,integer,,Count of phenyl-C2 substructure matches
+d_phenylC1_7_strict,integer,,Count of phenyl-C1 substructure matches
+d_isoprene_5,integer,,Count of isoprene unit substructure matches
+d2_acetyl_C2O1,integer,,Count of acetyl substructure matches
+d2_methylmalonyl_C3,integer,,Count of methylmalonyl substructure matches
+d_ethyl_2,integer,,Count of ethyl substructure matches
+d_methyl_1,integer,,Count of methyl substructure matches
+phosphate_2,integer,,Count of phosphate substructure matches
+sulfonate_2,integer,,Count of sulfonate substructure matches
+hal_f,integer,,Count of fluorine atom matches
+hal_cl,integer,,Count of chlorine atom matches
+hal_br,integer,,Count of bromine atom matches
+hal_i,integer,,Count of iodine atom matches
+n_nitrate_1,integer,,Count of nitrate substructure matches
+o_epoxy_1,integer,,Count of epoxy substructure matches
+o_ether_1,integer,,Count of ether substructure matches
+o_hydroxyl_1,integer,,Count of hydroxyl substructure matches
+r_c3,integer,,Count of 3-membered carbon ring matches
+r_c4,integer,,Count of 4-membered carbon ring matches
+r_c5,integer,,Count of 5-membered carbon ring matches
+r_c6,integer,,Count of 6-membered carbon ring matches
+r_c7,integer,,Count of 7-membered carbon ring matches
+r_c8,integer,,Count of 8-membered carbon ring matches
+r_c9,integer,,Count of 9-membered carbon ring matches
+r_c10,integer,,Count of 10-membered carbon ring matches
